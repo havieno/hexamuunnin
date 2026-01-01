@@ -24,15 +24,66 @@
         }
     </script>
 
+
+
+
+
+
     
     <style>
     body {
-        margin-left:4px;
-        margin-right:4px;
-        background-color: #00A2E8; /* vaaleansininen */
+        background-color: #00A2E8; /* sinun turkoosi */
         margin: 0;
         font-family: Arial, sans-serif;
-        }
+        color: #ffffff; /* valkoinen teksti turkoosilla taustalla */
+    }
+
+    .container {
+        max-width: 600px;       /* rajoittaa leveyttä isoilla näytöillä */
+        margin: 0 auto;         /* keskittää sivun */
+        padding: 20px;          /* sisätilaa */
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.15); /* kevyt läpikuultava laatikko */
+        padding: 20px;
+        border-radius: 12px;
+        backdrop-filter: blur(6px); /* iPhone tukee tätä! */
+        -webkit-backdrop-filter: blur(6px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    input, button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        border-radius: 8px;
+        border: none;
+        font-size: 18px;
+    }
+
+    input {
+        background: #ffffff;
+        color: #000000;
+    }
+
+    button {
+        background: #005f80;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #004a63;
+    }
     </style>
 
     
@@ -66,6 +117,7 @@ function toDec() {
 </body>
 
 </html>
+
 
 
 
